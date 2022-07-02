@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>tacocat</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1 id="title">tacocat</h1>
+      <img class="headerlogo" src="tacocat.png" alt="Cat Logo">
+      <h2>Welcome, stay for a while :)</h2>
+      <h3>Wusstest du, dass tacocat rückwärts tacocat bedeutet?</h3>
+    </div>
+
+    <div class="header header-gradient"></div>
+
+    <div class="content">
+      <p id="time">Die Zeit ist: 00:00</p>
+
+      <script type="text/javascript">
+        var timeP = document.getElementById("time");
+
+        function refreshTime() {
+          var currentTime = new Date();
+          timeP.innerHTML = "Es ist " + currentTime.getHours() + ":" + currentTime.getMinutes() + ":" + String(currentTime.getSeconds()).padStart(2, '0');
+  }
+        refreshTime()
+        setInterval(refreshTime, 1000);
+      </script>
+
+      <p>Finde mich auf</p>
+
+      <div class="socials">
+
+        <a href="https://github.com/Obama360/">
+          <div class="social logo_github">
+            <img class="social-logo" src="logos/github.png" alt="GitHub Logo">
+            <p>GitHub</p>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/dernico/">
+          <div class="social logo_instagram">
+            <img class="social-logo" src="logos/instagram.png" alt="Instagram Logo">
+            <p>Instagram</p>
+          </div>
+        </a>
+
+        <a href="mailto:nico@tacocat.ch">
+          <div class="social logo_email">
+            <img class="social-logo" src="logos/email.png" alt="Email Logo">
+            <p>E-Mail</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    <footer>
+      <p class="footertext lefttext">2022 - Nico Braun</p>
+      <p class="footertext centertext">tacocat.ch</p>
+      <p class="footertext righttext">You actually read that?</p>
+    </footer>
+  </body>
+</html>

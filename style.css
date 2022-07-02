@@ -1,0 +1,132 @@
+html {
+  background-color: #EECC69;
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+h1, h2, h3, h4, p {
+  font-family: 'Ubuntu', sans-serif;
+  color: #FFF;
+  text-align: center;
+}
+
+h1 {
+  font-size: 38pt;
+  font-weight: 700;
+
+  background: linear-gradient(to right, #eded9d 20%, #d0ed9d 80%);
+
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#title {
+  margin-top: 0px;
+}
+
+#time {
+  font-size: 32pt;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4 {
+  padding: 5px 10px 0px 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0px;
+}
+
+.header {
+  padding: 20px 0px 80px 0px;
+  background-color: rgba(34,34,34,0.8);
+  margin: 0px;
+  width: 100%;
+}
+
+.header-gradient {
+  background: linear-gradient(180deg, rgba(34,34,34,0.8) 0%, rgba(17,17,17,0) 100%);
+}
+
+.headerlogo {
+  display: block;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  width: 65%;
+  max-width: 265px;
+}
+
+.content {
+  padding-top: 20px;
+}
+
+.socials {
+  width: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+.social {
+  margin: 10px;
+  border-radius: 10px;
+  width: 128px;
+  padding: 20px 20px 10px 20px;
+  transition: 0.3s;
+}
+
+.social p {
+  font-weight: 500;
+}
+
+.logo_instagram:hover {
+  transform:scale(1.2);
+  background-image: -moz-linear-gradient( 90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
+}
+
+.logo_github:hover {
+  transform:scale(1.2);
+  background-image: -moz-linear-gradient( 90deg, rgb(0, 224, 191) 0%, rgb(0, 224, 123) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(0, 224, 191) 0%, rgb(0, 224, 123) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(0, 224, 191) 0%, rgb(0, 224, 123) 100%);
+}
+
+.logo_email:hover {
+  transform:scale(1.2);
+  background-image: -moz-linear-gradient( 90deg, rgb(0, 134, 224) 0%, rgb(0, 67, 224) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(0, 134, 224) 0%, rgb(0, 67, 224) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(0, 134, 224) 0%, rgb(0, 67, 224) 100%);
+}
+
+.social-logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 128px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 50px 0px -10px 0px;
+  background-color: #111;
+}
+
+.footertext {
+  color: #777;
+}
+
+.lefttext { text-align: left; margin-left: 20px }
+.centertext { text-align: center }
+.righttext { text-align: right; margin-right: 20px }
