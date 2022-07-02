@@ -27,7 +27,7 @@
 
         function refreshTime() {
           var currentTime = new Date();
-          timeP.innerHTML = "Es ist " + currentTime.getHours() + ":" + currentTime.getMinutes() + ":" + String(currentTime.getSeconds()).padStart(2, '0');
+          timeP.innerHTML = "Es ist " + String(currentTime.getHours()).padStart(2, '0') + ":" + String(currentTime.getMinutes()).padStart(2, '0') + ":" + String(currentTime.getSeconds()).padStart(2, '0');
   }
         refreshTime()
         setInterval(refreshTime, 1000);
